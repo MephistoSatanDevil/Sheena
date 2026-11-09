@@ -79,11 +79,11 @@ ACTION_IF (NOT ENGINE_IS ~bgee bg2ee iwdee~) BEGIN
 END
 
 APPEND ~Action.ids~
-~147 RemoveSpellRES(S:RES*,O:Target)~
-UNLESS ~147 RemoveSpellRES(S:RES*,O:Target)~
+~147 RemoveSpellRES(S:RES*)~
+UNLESS ~147 RemoveSpellRES(S:RES*)~
 APPEND ~Trigger.ids~
-~0x4031 HaveSpellRES(S:RES*)~
-UNLESS ~0x4031 HaveSpellRES(S:RES*)~
+~0x4031 HaveSpellRES(S:Spell*)~
+UNLESS ~0x4031 HaveSpellRES(S:Spell*)~
 
 //Sound
 COPY ~Sheena\Sound\K#Sheena.wav~ ~Override\K#Sheena.wav~
